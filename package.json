@@ -6,10 +6,13 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "proto": "NODE_ENV=development babel-node scripts/gen-proto.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@osmonauts/helpers": "^0.3.12",
+    "@osmonauts/lcd": "^0.3.10",
     "axios": "^0.27.2",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
@@ -21,6 +24,10 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
+    "@babel/node": "^7.18.9",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@osmonauts/telescope": "^0.8.5",
+    "@protobufs/bcna": "^0.0.13",
+    "@protobufs/ibc": "^0.0.10"
   }
 }
